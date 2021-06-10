@@ -1,0 +1,174 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+}
+/* nav bar section */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    transition: all .5s ease; 
+}
+.navbar ul li a:hover{
+    background-color: lightblue;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background: url(https://res.cloudinary.com/dj8kta1pe/image/upload/v1614618081/arnold-francisca-f77Bh3inUpE-unsplash_bmyeyu.jpg) no-repeat center center/cover;
+    background-color: black;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: -1;
+    opacity: .9;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+}
+
+.headings{
+    text-align: center;
+    margin: 40px 0px;
+    color: white;
+}
+
+/* about */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#pic{
+    display: flex;
+
+}
+
+#pic img{
+    width: 500px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+#intro h2{
+    margin-bottom: 20px;
+}
+
+/* projects */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+
+#contact {
+    padding-top: 200px;
+}
+
+footer {
+    padding-top: 20px;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#contactheading {
+    font-size: 30px;
+    color: white;   
+   text-align: center;
+}
+
+
+footer li {
+    line-height: 30px;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+
+.fab, .far {
+    font-size: 100px;
+    color: white;
+    padding-top: 30px;
+}
+
+.fab:hover, .far:hover {
+    color: lightblue;
+
+}
